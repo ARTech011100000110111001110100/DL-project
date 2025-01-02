@@ -9,5 +9,5 @@ def img(input_img):
     rc, _, _ = learn_inf.predict(input_img)
     return rc
 
-app = gr.Interface(fn=img, inputs=gr.Image(type='file'), outputs="text")
+app = gr.Interface(fn=img, inputs=gr.Image(type='filepath'), outputs='text')
 app.launch()
