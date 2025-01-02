@@ -1,7 +1,13 @@
 import gradio as gr
+from fastai.vision.all import *
 
-def greet(name):
-    return "Hello " + name + "!!"
+path = Path('model.pkl')
+learn_inf = load_learner(path)
 
-demo = gr.Interface(fn=greet, inputs="text", outputs="text")
-demo.launch()
+def img(input_img):
+    input_img = PILImage.create(input_img)
+    rc, _, _ = learn_inf.predict(input_img)
+    return rc
+
+app = gr.Interface(fn=img, inputs=gr.Image(type='file'), outputs="text")
+app.launch()
