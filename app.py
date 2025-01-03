@@ -20,4 +20,4 @@ def img(input_img):
     return rc, response
 
 app = gr.Interface(fn=img, inputs=gr.Image(type='filepath'), outputs='text')
-app.launch(share=True)
+app.launch()
