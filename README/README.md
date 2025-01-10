@@ -20,11 +20,11 @@ A fun project, nothing offensive.
 
 Contributions are welcome! Please follow these guidelines:
 
-Fork the repository.
-Create a new branch for your feature or bug fix.   
-Make your changes and commit them with clear and concise messages.
-Push your branch to your fork.
-Create a pull request to the original repository.   
+* Fork the repository.
+* Create a new branch for your feature or bug fix.   
+* Make your changes and commit them with clear and concise messages.
+* Push your branch to your fork.
+* Create a pull request to the original repository.   
 
 # License
 
