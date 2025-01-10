@@ -1,7 +1,7 @@
 import gradio as gr
 from fastai.vision.all import *
 
-path = Path('model.pkl')
+path = Path('model_v2.pkl')
 learn_inf = load_learner(path)
 
 def img(input_img):
